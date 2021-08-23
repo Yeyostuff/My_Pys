@@ -10,6 +10,7 @@ tiempo = 4
 busqueda = ""
 
 #os.system("cls")
+eth = float(input("Cuanto ethereum quieres convertir a Quetzales?  "))
 busqueda = r.html.find(".b1hJbf") #b1hJbf esta es la clase que contiene el tipo de cambio
 print(busqueda)
 cambio = float(busqueda[0]._attrs['data-exchange-rate'])
@@ -18,7 +19,7 @@ cambio = float(busqueda[0]._attrs['data-exchange-rate'])
 print("          CUANTO VALE MI ETHEREUM HOY:\n")
 print(" El tipo de cambio actual es {} QUETZALES por cada Ethereum".format(cambio))
 
-eth = float(0.6)
+
 
 print("\n Tus {} ETH equivalen a: ".format(eth))
 
